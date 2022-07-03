@@ -1,0 +1,6 @@
+framework module Pods_MiniApp_FirebaseGoogleSignIn {
+  umbrella header "Pods-MiniApp-FirebaseGoogleSignIn-umbrella.h"
+
+  export *
+  module * { export * }
+}
