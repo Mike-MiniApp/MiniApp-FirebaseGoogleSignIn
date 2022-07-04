@@ -36,7 +36,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     // Googleサインイン用で追加
-    func application(_ application: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any]) -> Bool{
+    func application(_ application: UIApplication, open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey: Any])
+    -> Bool {
         return GIDSignIn.sharedInstance.handle(url)
     }
 

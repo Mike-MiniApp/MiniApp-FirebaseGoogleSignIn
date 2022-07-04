@@ -10,11 +10,12 @@
 		6212C368DD268C5117D23D31 /* Pods_MiniApp_FirebaseGoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BADEC98D4AA5D0413DA7872C /* Pods_MiniApp_FirebaseGoogleSignIn.framework */; };
 		95247CB02871606300D1E4A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95247CAF2871606300D1E4A4 /* AppDelegate.swift */; };
 		95247CB22871606300D1E4A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95247CB12871606300D1E4A4 /* SceneDelegate.swift */; };
-		95247CB42871606300D1E4A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95247CB32871606300D1E4A4 /* ViewController.swift */; };
+		95247CB42871606300D1E4A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95247CB32871606300D1E4A4 /* LoginViewController.swift */; };
 		95247CB72871606300D1E4A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95247CB52871606300D1E4A4 /* Main.storyboard */; };
 		95247CB92871606500D1E4A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95247CB82871606500D1E4A4 /* Assets.xcassets */; };
 		95247CBC2871606500D1E4A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95247CBA2871606500D1E4A4 /* LaunchScreen.storyboard */; };
 		95247CC42871611700D1E4A4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95247CC32871611700D1E4A4 /* GoogleService-Info.plist */; };
+		95247CC62872C7C500D1E4A4 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95247CC52872C7C500D1E4A4 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +23,13 @@
 		95247CAC2871606300D1E4A4 /* MiniApp-FirebaseGoogleSignIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniApp-FirebaseGoogleSignIn.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95247CAF2871606300D1E4A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		95247CB12871606300D1E4A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		95247CB32871606300D1E4A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		95247CB32871606300D1E4A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		95247CB62871606300D1E4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		95247CB82871606500D1E4A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95247CBB2871606500D1E4A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		95247CBD2871606500D1E4A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95247CC32871611700D1E4A4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		95247CC52872C7C500D1E4A4 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		BADEC98D4AA5D0413DA7872C /* Pods_MiniApp_FirebaseGoogleSignIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MiniApp_FirebaseGoogleSignIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3EE8F0D594A2D586D245138 /* Pods-MiniApp-FirebaseGoogleSignIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MiniApp-FirebaseGoogleSignIn.debug.xcconfig"; path = "Target Support Files/Pods-MiniApp-FirebaseGoogleSignIn/Pods-MiniApp-FirebaseGoogleSignIn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -67,7 +69,8 @@
 			children = (
 				95247CAF2871606300D1E4A4 /* AppDelegate.swift */,
 				95247CB12871606300D1E4A4 /* SceneDelegate.swift */,
-				95247CB32871606300D1E4A4 /* ViewController.swift */,
+				95247CB32871606300D1E4A4 /* LoginViewController.swift */,
+				95247CC52872C7C500D1E4A4 /* SettingViewController.swift */,
 				95247CB52871606300D1E4A4 /* Main.storyboard */,
 				95247CB82871606500D1E4A4 /* Assets.xcassets */,
 				95247CBA2871606500D1E4A4 /* LaunchScreen.storyboard */,
@@ -210,9 +213,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95247CB42871606300D1E4A4 /* ViewController.swift in Sources */,
+				95247CB42871606300D1E4A4 /* LoginViewController.swift in Sources */,
 				95247CB02871606300D1E4A4 /* AppDelegate.swift in Sources */,
 				95247CB22871606300D1E4A4 /* SceneDelegate.swift in Sources */,
+				95247CC62872C7C500D1E4A4 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
