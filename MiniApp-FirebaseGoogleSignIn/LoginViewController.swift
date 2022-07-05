@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
 
         // GIDの設定
         let config = GIDConfiguration(clientID: clientID)
-
+        // サイレントログイン
         GIDSignIn.sharedInstance.signIn(with: config, presenting: self){ [unowned self] user, error in
             if let error = error {
                 print("GIDSignInError: \(error.localizedDescription)")
@@ -42,10 +42,10 @@ class LoginViewController: UIViewController {
             }
             // 引数のuserの情報を使用して、GoogleAuthProviderのcredential(認証情報)を生成し、それを引数にFirebaseAuthのsignInを実行
             let credential = GoogleAuthProvider.credential(withIDToken: idToken, accessToken: authentication.accessToken)
+            // FirebaseAuthenticationにログインを反映
             Auth.auth().signIn(with: credential) { authResult, error in
                 if let error = error{
-                    let authError = error as NSError
-                    print("ログインエラー")
+                    print("error",error)
                     return
                 }
                 print("Googleアカウントでサインインしました")
